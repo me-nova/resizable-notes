@@ -2,7 +2,6 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-It took about 7 hours to right the test application.
 The application provides the following functionality:
 1. Create a new note of the specified size at the specified position.
 2. Change note size by dragging.

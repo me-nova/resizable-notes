@@ -2,6 +2,19 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+It took about 7 hours to right the test application.
+The application provides the following functionality:
+1. Create a new note of the specified size at the specified position.
+2. Change note size by dragging.
+3. Move a note by dragging.
+4. Remove a note by dragging it over a predefined "trash" zone.
+5. Editing note text.
+6. Different note colors.
+
+To run the application locally just run the
+command line "yarn install" - to install dependencies
+and "yarn start"  - to start it.
+
 ## Available Scripts
 
 In the project directory, you can run:

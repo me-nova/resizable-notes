@@ -1,0 +1,70 @@
+$grey: rgb(60, 64, 67);
+
+.color {
+  display: flex;
+  background: radial-gradient(#af8f79, transparent);
+  justify-content: space-evenly;
+  position: relative;
+  border-radius: 8px;
+  margin-top: 25px;
+
+  &:before {
+    content: "Color";
+    position: absolute;
+    left: 0;
+    top: -20px;
+    color: #91745c;
+
+  }
+
+  input[type="radio"]{
+    visibility: hidden;
+    height: 0;
+    width: 0;
+    display: none;
+  }
+
+  label {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    box-shadow: rgba($grey, .3) 0 1px 2px 0, rgba($grey, .15) 0 2px 6px 2px;
+  }
+
+  input[type="radio"] + label.yellow{
+    border: 4px solid #ecc08b;
+  }
+
+  input[type="radio"] + label.red{
+    border: 4px solid #eda9bc;
+  }
+
+  input[type="radio"] + label.green{
+    border: 4px solid rgba(#abdcab, 1);
+  }
+
+  input[type="radio"] + label.blue{
+    border: 4px solid rgb(#c0c8f3, 1);
+  }
+
+  input[type="radio"]:checked + label.yellow{
+    background-color: #ecc08b;
+  }
+
+  input[type="radio"]:checked + label.green{
+    background-color: rgba(#abdcab, 1);
+  }
+
+  input[type="radio"]:checked + label.red{
+    background-color: #eda9bc;
+  }
+
+  input[type="radio"]:checked + label.blue{
+    background-color: rgb(#c0c8f3, 1);
+  }
+}

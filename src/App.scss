@@ -1,0 +1,74 @@
+$light-red: rgb(232, 127, 127);
+$brown: #ba9374;
+$btn-background: #ce9464;
+$btn-background-active: #e3a370;
+$btn-border: #c98c5d;
+$btn-border-hovered: #e3a370;
+$btn-text: #eee4e4;
+$btn-text-hovered: #fff;
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  background: burlywood;
+  font-family: sans-serif;
+  height: 100%;
+}
+.create-btn {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  height: 40px;
+  width: 120px;
+  background: $btn-background;
+  color: $btn-text;
+  border: 2px solid $btn-border;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+
+  &:hover {
+    border-color: $btn-border-hovered;
+    color: $btn-text-hovered;
+  }
+
+  &:active {
+    background: $btn-background-active;
+  }
+}
+
+#trash {
+  position: absolute;
+  right: 100px;
+  bottom: 100px;
+  width: 200px;
+  height: 200px;
+  background: transparent;
+  border: 2px solid rgba(#9a3333, .2);
+  box-shadow: rgba($light-red, .3) 0 1px 10px 0, rgba($light-red, .15) 0 2px 10px 2px;
+  border-radius: 10px;
+  z-index: 0;
+
+  &:after {
+    content: "trash";
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    font-weight: bold;
+    color: rgba(#854848, .3);
+  }
+
+  &:hover:after {
+    content: "Drag to remove card";
+  }
+}
